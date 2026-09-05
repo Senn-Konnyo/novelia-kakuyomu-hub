@@ -1,8 +1,6 @@
 Novelia Kakuyomu Ranking Hub
 
-简介
-
-暂代替机翻站(https://n.novelia.cc) 提供完整的 Kakuyomu 排名页。完全由Gemini 3.7 Flash构建，笔者几乎不会写代码，别说全栈开发了。爬虫功能全部在本地进行，点击条目跳转至本站或机翻站。只支持Windows端的Chrome浏览器，没有在Edge上进行测试。有注册表改动。
+暂代替机翻站(https://n.novelia.cc) 提供完整的 Kakuyomu 排名页。完全由Gemini 3.7 Flash构建，笔者几乎不会写代码，别说全栈开发了。爬虫功能全部在本地进行，点击条目跳转至本站或机翻站。只支持Windows端Chrome浏览器，没有在Edge上进行测试。
 
 ---
 
@@ -39,7 +37,7 @@ Novelia Kakuyomu Ranking Hub
 
 归属与许可
 
-上游项目: 基于[auto-novel](https://github.com/auto-novel/auto-novel) (Commit d44b8a5fe7fa) 派生。
+上游项目: 基于[auto-novel](https://github.com/auto-novel/auto-novel) (Commit d44b8a5fe7fa) 派生。这不是一个novelia.cc开发者提供的项目。
 
 许可: GNU General Public License v3.0 (GPL-3.0)。
 
