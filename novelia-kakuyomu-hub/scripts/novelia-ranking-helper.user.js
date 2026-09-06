@@ -3,7 +3,8 @@
 // @namespace    https://n.novelia.cc/
 // @version      1.4.0
 // @description  Automatically launches local Kakuyomu ranking server with instant 0ms optimistic tab feedback on Novelia.cc
-// @author       Antigravity
+// @author       Konyo
+// @license      GPL-3.0
 // @match        *://n.novelia.cc/*
 // @grant        none
 // @run-at       document-start
