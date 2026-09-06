@@ -25,7 +25,7 @@ Novelia Kakuyomu Ranking Hub
       - 点击安装
 
 3. 使用
-   - 访问[n.novelia.cc](https://n.novelia.cc)并点击左侧菜单的“小说排行-kakuyomu：流派”
+   - 访问[n.novelia.cc](https://n.novelia.cc)并点击左侧菜单的“小说排行 - kakuyomu：流派”
    - 本地服务会自动启动并打开排名页面
 
 4. 卸载
