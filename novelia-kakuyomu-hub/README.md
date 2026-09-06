@@ -21,12 +21,11 @@ Novelia Kakuyomu Ranking Hub
       - 将内容粘贴到Tampermonkey编辑器中
       - 保存
    - 1.2.2.2 Greasy Fork 安装（没测试过）
-      - 访问[Greasy Fork](https://greasyfork.org/zh-CN)
-      - 搜索`Novelia Kakuyomu Ranking Helper`
+      - [Novelia Kakuyomu Ranking Auto-Launcher](https://greasyfork.org/zh-CN/scripts/594496-novelia-kakuyomu-ranking-auto-launcher)
       - 点击安装
 
 3. 使用
-   - 访问[n.novelia.cc](https://n.novelia.cc)并点击左侧菜单的“kakuyomu：流派”
+   - 访问[n.novelia.cc](https://n.novelia.cc)并点击左侧菜单的“小说排行-kakuyomu：流派”
    - 本地服务会自动启动并打开排名页面
 
 4. 卸载
