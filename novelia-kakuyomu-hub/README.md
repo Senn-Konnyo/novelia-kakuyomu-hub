@@ -8,12 +8,11 @@ Novelia Kakuyomu Ranking Hub
 - 1.1 环境/前置
    - [Node.js](https://nodejs.org/) (v18 or higher recommended).
    - [Tampermonkey](https://www.tampermonkey.net/) (Google Chrome extension).
-
-2. 安装
-- 2.1 安装本地服务
+- 1.2. 安装
+- 1.2.1 安装本地服务
    - 双击`install.bat`
-- 2.2安装脚本
-   - 2.2.1 手动安装
+- 1.2.2安装脚本
+   - 1.2.2.1 手动安装
       - 点击扩展程序（拼图图标）
       - 弹出菜单选择“Tampermonkey”图标
       - 点击“管理面板”
@@ -21,7 +20,7 @@ Novelia Kakuyomu Ranking Hub
       - 将`scripts/novelia-ranking-helper.user.js`的内容复制到文本编辑器中
       - 将内容粘贴到Tampermonkey编辑器中
       - 保存
-   - 2.2.2 Greasy Fork 安装（没测试过）
+   - 1.2.2.2 Greasy Fork 安装（没测试过）
       - 访问[Greasy Fork](https://greasyfork.org/zh-CN)
       - 搜索`Novelia Kakuyomu Ranking Helper`
       - 点击安装
