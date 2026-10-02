@@ -19,5 +19,5 @@ Installation & Usage
 
 ---
 
-### 4. License
+### License
 GPL-3.0 License.
