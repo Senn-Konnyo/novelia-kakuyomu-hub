@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kakuyomu：流派 - 轻小说机翻机器人</title>
+  <meta name="description" content="Kakuyomu与成为小说家吧实时排行榜 - 轻小说机翻机器人">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="n-layout n-layout--has-sider">
+    <!-- Top Header -->
+    <header class="n-layout-header">
+      <div class="header-inner">
+        <!-- Mobile Drawer Toggle -->
+        <button id="mobileMenuBtn" class="n-button-icon mobile-only" aria-label="打开菜单">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+
+        <!-- Robot Logo -->
+        <div class="logo-wrapper">
+          <div class="robot-icon">
+            <svg viewBox="0 0 1024 1024" width="30" height="30" fill="currentColor">
+              <path
+                d="M512 64a448 448 0 1 1-448 448 448 448 0 0 1 448-448m0-64a512 512 0 1 0 512 512A512 512 0 0 0 512 0z" />
+              <path
+                d="M512 256a64 64 0 0 0-64 64v64h128v-64a64 64 0 0 0-64-64m-160 256a64 64 0 1 0 64 64 64 64 0 0 0-64-64m320 0a64 64 0 1 0 64 64 64 64 0 0 0-64-64m-384 192a64 64 0 0 0 64 64h320a64 64 0 0 0 64-64z" />
+            </svg>
+          </div>
+          <span class="logo-title desktop-only">轻小说机翻机器人</span>
+        </div>
+
+        <div class="header-spacer"></div>
+
+        <!-- Header Actions -->
+        <div class="header-actions">
+          <a href="https://n.novelia.cc" target="_blank" rel="noopener noreferrer" class="n-button n-button--default">
+            <span>访问主站 novelia.cc</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Sidebar (Desktop) -->
+    <aside class="n-layout-sider" id="sidebar">
+      <div class="sider-content">
+        <nav class="n-menu">
+          <a href="https://n.novelia.cc/" target="_blank" rel="noopener noreferrer" class="n-menu-item">
+            <span class="n-menu-item-icon">🏠</span>
+            <span class="n-menu-item-text">首页</span>
+          </a>
+          <a href="https://n.novelia.cc/favorite/web" target="_blank" rel="noopener noreferrer" class="n-menu-item">
+            <span class="n-menu-item-icon">⭐</span>
+            <span class="n-menu-item-text">我的收藏</span>
+          </a>
+          <a href="https://n.novelia.cc/read-history" target="_blank" rel="noopener noreferrer" class="n-menu-item">
+            <span class="n-menu-item-icon">🕒</span>
+            <span class="n-menu-item-text">历史记录</span>
+          </a>
+          <a href="https://n.novelia.cc/novel" target="_blank" rel="noopener noreferrer" class="n-menu-item">
+            <span class="n-menu-item-icon">🌐</span>
+            <span class="n-menu-item-text">网络小说</span>
+          </a>
+          <a href="https://n.novelia.cc/wenku" target="_blank" rel="noopener noreferrer" class="n-menu-item">
+            <span class="n-menu-item-icon">📚</span>
+            <span class="n-menu-item-text">文库小说</span>
+          </a>
+
+          <!-- Rankings Group -->
+          <div class="n-menu-group">
+            <div class="n-menu-group-header n-menu-item">
+              <span class="n-menu-item-icon">🔥</span>
+              <span class="n-menu-item-text">小说排行</span>
+            </div>
+            <div class="n-menu-subitems">
+              <a href="https://n.novelia.cc/rank/web/syosetu/1" target="_blank" rel="noopener noreferrer"
+                class="n-menu-subitem">
+                <span>成为小说家：流派</span>
+              </a>
+              <a href="https://n.novelia.cc/rank/web/syosetu/2" target="_blank" rel="noopener noreferrer"
+                class="n-menu-subitem">
+                <span>成为小说家：综合</span>
+              </a>
+              <a href="https://n.novelia.cc/rank/web/syosetu/3" target="_blank" rel="noopener noreferrer"
+                class="n-menu-subitem">
+                <span>成为小说家：异世界转移/转生</span>
+              </a>
+              <button class="n-menu-subitem active" data-rank-target="kakuyomu-1">
+                <span>Kakuyomu：流派</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Theme Toggle Item (same gap as other menu items) -->
+          <button id="themeToggleBtn" class="n-menu-item" title="切换暗色/亮色模式">
+            <span class="n-menu-item-icon" id="themeIcon">🌙</span>
+            <span class="n-menu-item-text" id="themeText">暗色模式</span>
+          </button>
+        </nav>
+
+        <div class="sider-footer">
+          <div class="sidebar-build-info">
+            <div class="sidebar-build-info-item">
+              <span>🕒 构建于 2026-08-31</span>
+            </div>
+            <div class="sidebar-build-info-item">
+              <span>🔗 Commit <a href="https://github.com/auto-novel/auto-novel/commit/d44b8a5fe7fa" target="_blank"
+                  rel="noopener noreferrer"><code>d44b8a5fe7fa</code></a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="n-layout-content">
+      <div class="layout-content-inner">
+        <!-- Page Title -->
+        <h1 class="n-h1" id="pageTitle">Kakuyomu：流派</h1>
+
+        <!-- Filter Area (Exact ListFilter layout) -->
+        <div class="n-list-filter">
+          <!-- Genre Row -->
+          <div class="filter-row" id="genreRow">
+            <span class="filter-label">流派</span>
+            <div class="filter-tags" id="genreTags"></div>
+          </div>
+
+          <!-- Range Row -->
+          <div class="filter-row" id="rangeRow">
+            <span class="filter-label">范围</span>
+            <div class="filter-tags" id="rangeTags"></div>
+          </div>
+
+          <!-- Status Row -->
+          <div class="filter-row" id="statusRow">
+            <span class="filter-label">状态</span>
+            <div class="filter-tags" id="statusTags"></div>
+          </div>
+
+          <!-- Search & Only Translated Toggle -->
+          <div class="filter-search-row">
+            <div class="search-box">
+              <input type="text" id="searchInput" placeholder="搜索中文译名 / 日文标题 / 作者..." autocomplete="off">
+              <button id="clearSearchBtn" class="clear-btn hidden">✕</button>
+            </div>
+            <label class="checkbox-label" title="只展示已被 novelia 收录并拥有中文译名的小说">
+              <input type="checkbox" id="onlyTranslatedCheckbox">
+              <span class="checkbox-custom"></span>
+              <span class="checkbox-text">仅看已收录中文</span>
+            </label>
+            <span id="rankCountLabel" class="rank-count-label">加载中...</span>
+            <button id="refreshBtn" class="refresh-btn" title="刷新榜单">🔄 刷新</button>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="n-divider"></div>
+
+        <!-- Loading State -->
+        <div id="loadingBox" class="loading-box hidden">
+          <div class="n-spin"></div>
+          <p>正在获取实时榜单数据...</p>
+        </div>
+
+        <!-- Error State -->
+        <div id="errorBox" class="error-box hidden">
+          <p id="errorText">获取榜单失败</p>
+          <button id="retryBtn" class="n-button n-button--primary">重试</button>
+        </div>
+
+        <!-- Novel List (Exact NovelListWeb layout) -->
+        <div id="novelListContainer" class="n-list">
+          <!-- Populated by JavaScript -->
+        </div>
+
+        <!-- Pagination -->
+        <div id="paginationBar" class="pagination-bar">
+          <button id="prevPageBtn" class="n-button-page" disabled>上一页</button>
+          <div id="pageNumbersContainer" class="page-numbers-container"></div>
+          <button id="nextPageBtn" class="n-button-page">下一页</button>
+        </div>
+
+        <!-- Bottom Divider -->
+        <div class="n-divider"></div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Mobile Drawer Overlay -->
+  <div id="drawerOverlay" class="drawer-overlay hidden">
+    <div class="drawer-panel" id="drawerPanel">
+      <div class="drawer-header">
+        <span>菜单导航</span>
+        <button id="closeDrawerBtn" class="n-button-icon">✕</button>
+      </div>
+      <div class="drawer-body" id="drawerBody"></div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
