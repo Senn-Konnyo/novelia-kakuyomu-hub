@@ -1,6 +1,6 @@
 Novelia Kakuyomu Ranking Hub
 
-暂代替[机翻站](https://n.novelia.cc) 提供完整的 Kakuyomu 排名页。完全由Gemini 3.7 Flash构建，笔者几乎不会写代码，别说全栈开发了。爬虫功能全部在本地进行，点击条目跳转至本站或机翻站。只确凿支持Windows端Chrome浏览器，没有在Edge上进行测试。
+暂代替[机翻站](https://n.novelia.cc) 提供完整的 Kakuyomu 排名页。爬虫功能全部在本地进行，点击条目跳转至本站或机翻站。只确凿支持Windows端Chrome浏览器，没有在Edge上进行测试。
 
 ---
 
